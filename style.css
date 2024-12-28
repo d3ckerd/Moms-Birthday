@@ -19,6 +19,7 @@ body {
     line-height: 1.3; /* Slightly looser line spacing */
 }
 
+
 /* Buttons */
 #play-button, .button {
     position: relative;
@@ -74,13 +75,33 @@ body {
 }
 
 /* Navigation Buttons */
-.navigation-buttons-centered {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
+.navigation-buttons {
+    text-align: center;
+    margin-top: -10px; /* Adjust the value to move the buttons up */
 }
+
+/* Style for navigation buttons */
+.navigation-buttons button {
+    position: relative;
+    margin: 10px 5px; /* Add a bit of space between the buttons */
+    background-color: #4682B4; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 30px; /* Padding for size */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effects for navigation buttons */
+.navigation-buttons button:hover {
+    background-color: #1E90FF; /* Lighter blue on hover */
+    transform: scale(1.05); /* Slight enlargement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
 
 .back-button, .next-button {
     text-decoration: none;
@@ -166,3 +187,4 @@ body {
         max-width: 100%; /* Allow quotes to span full width */
     }
 }
+
