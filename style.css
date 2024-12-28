@@ -1,250 +1,168 @@
-/* THIS IS FOR FIRST PAGE*/
+/* General Body Settings */
 body {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: -250px;
-    background-color: #ADD8E6;
-    color: #333333;
+    margin: 0;
+    padding: 0;
     font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
-    flex-direction: column;
+    background-color: #ADD8E6;
     overflow-x: hidden;
+    font-size: 32px; /* General font size increased */
 }
 
-#hp1 { 
-    position: relative;
-    padding-top: 100px;
+/* Titles */
+#hp1, #hp2, #hp3, #hp4, #hp5 {
     max-width: 1800px;
-    font-size: 86px;
-
+    padding: 120px 20px 40px; /* Increased spacing at the top and bottom */
+    font-size: 72px; /* Increased title size */
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3; /* Slightly looser line spacing */
 }
 
-#play-button {
+/* Buttons */
+#play-button, .button {
     position: relative;
-    top: -50px;
-    background-color: #87CEEB; 
-    color: white; 
-    border: none; 
-    padding: 15px 30px; 
-    font-size: 18px; 
-    font-family: 'Gloria Hallelujah', cursive; 
-    border-radius: 25px; 
-    cursor: pointer; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    transition: all 0.3s ease; 
-}
-
-.first {
-    position: relative;
-    top: 25px;
-    font-size: 30px;
-}
-
-.second{
-    position: relative;
-    top: 50px;
-    font-size: 30px;
-}
-
-
-.button{
-    position: relative;
-    top: 200px;
-    width: 200px; 
-    height: 60px; 
-    font-size: 20px; 
-    background-color: #4682B4; 
+    top: 20px; /* Moves the button further down */
+    background-color: #87CEEB;
     color: white;
     border: none;
-    border-radius: 30px;
-    border: 2px solid white; 
+    padding: 12px 25px; /* Slightly smaller button */
+    font-size: 16px; /* Smaller text size */
+    font-family: 'Gloria Hallelujah', cursive;
+    border-radius: 20px; /* Adjusted radius for a cleaner look */
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    margin-top: 50px; /* Increased spacing from the content above */
 }
 
-.button:hover {
-    background-color: #1E90FF; 
-    transform: scale(1.05); 
+#play-button:hover, .button:hover {
+    background-color: #1E90FF;
+    transform: scale(1.05); /* Retain hover effect */
 }
 
-/* THIS IS FOR SECOND PAGE*/
-#hp2 { 
-    position: relative;
-    top: 200px;
-    max-width: 1800px;
-    font-size: 64px;
+/* Gratitude Section */
+.gratitude-container {
+    margin: 0 auto;
+    padding: 60px 20px; /* Increased padding for more space */
+    max-width: 800px; /* Center and constrain width */
+    text-align: center;
+    font-size: 20px; /* Larger font for better readability */
 }
-
 
 .gratitude-list {
-    list-style-type: none; 
-    padding: 0; 
-    max-width: 600px; 
-    margin: 20px auto; 
+    list-style-type: none;
+    padding: 0;
+    margin: 30px auto; /* Add space between the gratitude items and the title */
 }
 
 .gratitude-list li {
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    top: 150px;
-    background-color: #f0f8ff; 
-    padding: 15px;
-    margin-bottom: 10px;
+    max-width: 600px; /* Limit individual box width */
+    margin: 15px auto; /* Add more space between items */
+    padding: 20px;
+    background-color: #f0f8ff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    font-size: 18px; 
-    line-height: 1.6;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px; /* Larger text in boxes */
+    line-height: 1.8;
 }
 
 .gratitude-list li:hover {
-    background-color: #e6f7ff; 
-    transform: translateY(-2px); 
+    background-color: #e6f7ff;
+    transform: translateY(-2px);
     transition: all 0.3s ease;
 }
 
+/* Navigation Buttons */
 .navigation-buttons-centered {
+    position: relative;
     display: flex;
     justify-content: center;
-    gap: 20px; 
-    position: fixed;
-    bottom: 20px; 
-    width: 100%; 
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .back-button, .next-button {
     text-decoration: none;
-    background-color: #4682B4; 
-    color: white;
-    padding: 10px 20px; 
-    border-radius: 30px; 
-    font-size: 16px; 
-    border: 2px solid white; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: all 0.3s ease; 
-}
-
-.back-button:hover, .next-button:hover {
-    background-color: #1E90FF; 
-    transform: translateY(-2px); 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
-}
-
-/*THIS IS FOR THE THIRD PAGE*/
-
-
-#hp3 {
-    position: relative;
-    top: 100px;
-    max-width: 1800px;
-    padding-top: 100px;
-    font-size: 86px;
-}
-
-
-.memory-container {
-    position: relative;
-    top: 25px;
-    text-align: center;
-    max-width: 2000px;
-}
-
-.memory img {
-    position: relative;
-    top: 25px;
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.memory p {
-    position: relative;
-    top: 40px;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.navigation-buttons button {
-    position: relative;
-    top: 50px;
     background-color: #4682B4;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 15px 30px; /* Slightly larger buttons */
+    border-radius: 30px;
+    font-size: 18px; /* Larger button font */
+    border: 2px solid white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
-.navigation-buttons button:hover {
+.back-button:hover, .next-button:hover {
     background-color: #1E90FF;
     transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*THIS IS FOR PAGE 4*/
-#hp4 {
-    position: relative;
-    top: 125px;
-    max-width: 1800px;
-    padding-top: 100px;
-    font-size: 86px;
-
-}
-
-#quotes-section {
-    position: relative;
-    top: 50px;
+/* Photos Section */
+.memory-container {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px; /* Increased padding for spacing */
+    max-width: 1200px; /* Constrain container width */
+    margin: 0 auto;
+    font-size: 20px; /* Larger text in this section */
+}
+
+.memory img {
+    width: auto; /* Avoid stretching */
+    max-width: 100%; /* Constrain to container */
+    max-height: 500px;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.memory p {
+    font-size: 32px; /* Increased size for captions */
+    margin-bottom: 30px; /* Add spacing below captions */
+}
+
+/* Quotes Section */
+#quotes-section {
+    margin-top: 80px; /* More space above the quotes section */
+    padding: 50px 20px; /* Increased padding */
+    text-align: center;
     background-color: #eaf4fc;
+    font-size: 20px; /* Slightly larger text */
 }
 
 .quote-container {
     display: inline-block;
-    margin: 10px; 
-    max-width: 300px; 
+    margin: 15px; /* More space between quotes */
+    max-width: 400px; /* Adjusted for larger screens */
 }
 
 .quote-container img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s ease; 
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .quote-container img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    #quotes-section {
+    #hp1, #hp2, #hp3, #hp4, #hp5 {
+        font-size: 72px; /* Adjust title size for smaller screens */
+        padding: 80px 15px 30px; /* Adjust padding */
+    }
+
+    .gratitude-container,
+    .memory-container {
+        max-width: 100%; /* Use full width */
         padding: 20px;
     }
+
     .quote-container {
-        max-width: 100%; 
+        max-width: 100%; /* Allow quotes to span full width */
     }
-}
-
-
-/*THIS IS FOR PAGE 5*/
-
-#hp5 {
-    position: relative;
-    max-width: 1800px;
-    padding-top: 100px;
-    font-size: 86px;
-}
-
-#meow {
-    font-size: 30px;
 }
